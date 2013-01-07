@@ -1,19 +1,30 @@
 <?php
 /*
-  $Id: main.php v1.0 2011-11-04 datazen $
+  $Id: updates.php v1.0 2013-01-01 datazen $
 
   LoadedCommerce, Innovative eCommerce Solutions
   http://www.loadedcommerce.com
 
-  Copyright (c) 2011 LoadedCommerce.com
+  Copyright (c) 2013 Loaded Commerce, LLC
 
   @author     LoadedCommerce Team
-  @copyright  (c) 2011 LoadedCommerce Team
+  @copyright  (c) 2013 LoadedCommerce Team
   @license    http://loadedcommerce.com/license.html
 */
 ?>
-<div class="pageContainer">
-  <div class="pageTitle"><h1><?php echo $lC_Template->getPageTitle(); ?></h1></div>
-  <div style="text-align: center;">Replace this content in /admin/includes/applications/updates/pages/main.php</div>
-</div>
-<?php $lC_Template->loadDialog($lC_Template->getModule()); ?>
+<!-- Main content -->
+<section role="main" id="main">
+  <noscript class="message black-gradient simpler"><?php echo $lC_Language->get('ms_error_javascript_not_enabled_warning'); ?></noscript>
+  <hgroup id="main-title" class="thin">
+    <h1><?php echo $lC_Template->getPageTitle(); ?></h1>
+  </hgroup>
+  <style>
+  .dataColCheck { text-align: center; }
+  </style>
+  <div class="with-padding-no-top">
+    <form name="batch" id="batch" action="#" method="post">
+    </form>
+  </div>
+</section>
+<?php $lC_Template->loadModal($lC_Template->getModule()); ?>
+<!-- Main content end -->
