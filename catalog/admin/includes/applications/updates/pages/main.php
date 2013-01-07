@@ -11,7 +11,7 @@
   @copyright  (c) 2013 LoadedCommerce Team
   @license    http://loadedcommerce.com/license.html
 */
-require_once('includes/applications/updater/classes/updater.php');  
+require_once('includes/applications/updates/classes/updates.php');  
 
 $updateArr = lC_Updater_Admin::getUpdateData(); 
 
@@ -79,7 +79,7 @@ $lastCheckedTime = $lastCheckedArr[1];
 
   </div>
   <form name="batch" id="batch" action="#" method="post">
-  <table border="0" width="100%" cellspacing="0" cellpadding="0" class="display" id="updaterDataTable">
+  <table border="0" width="100%" cellspacing="0" cellpadding="0" class="display" id="updatesDataTable">
     <thead>
       <tr>
         <th align="left" height="30"><?php echo $lC_Language->get('table_heading_updates'); ?></th> 
@@ -100,7 +100,7 @@ $lastCheckedTime = $lastCheckedArr[1];
   <script type="text/javascript" charset="utf-8">
   $(document).ready(function() {  
     var dataTableDataURL = '<?php echo lc_href_link_admin('rpc.php', $lC_Template->getModule() . '&action=getAll'); ?>';   
-    oTable = $('#updaterDataTable').dataTable({
+    oTable = $('#updatesDataTable').dataTable({
       "bProcessing": true,
       "sAjaxSource": dataTableDataURL,
       "bJQueryUI": false,  
@@ -110,7 +110,7 @@ $lastCheckedTime = $lastCheckedArr[1];
       "aoColumns": [{ "sWidth": "800px", "bSortable": true, "sClass": "dataColModule" },
                     { "sWidth": "140px", "bSortable": false, "sClass": "dataColAction" }]
     }); 
-    $("#updaterDataTable_wrapper .ui-widget-header").removeClass('ui-widget-header');
+    $("#updatesDataTable_wrapper .ui-widget-header").removeClass('ui-widget-header');
   });
 
   function getUpdateData(type) {
@@ -132,4 +132,3 @@ alert(print_r(data.data.params.ProB2B, true));
   }
   </script>
 </div>
-<?php $lC_Template->loadDialog($lC_Template->getModule()); ?>

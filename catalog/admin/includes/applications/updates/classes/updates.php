@@ -1,6 +1,6 @@
 <?php
 /*
-  $Id: updater.php v1.0 2013-01-01 datazen $
+  $Id: updates.php v1.0 2013-01-01 datazen $
 
   LoadedCommerce, Innovative eCommerce Solutions
   http://www.loadedcommerce.com
