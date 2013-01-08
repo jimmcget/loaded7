@@ -10,8 +10,7 @@
   @author     LoadedCommerce Team
   @copyright  (c) 2013 LoadedCommerce Team
   @license    http://loadedcommerce.com/license.html
-  */
-  // added for commit testing to new branch
+  */ 
 ?>
 <!--CHECKOUT SHIPPING SECTION STARTS-->
   <div id="checkout_shipping_details" class="full_page">
