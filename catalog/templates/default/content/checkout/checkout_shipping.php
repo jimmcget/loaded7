@@ -10,7 +10,8 @@
   @author     LoadedCommerce Team
   @copyright  (c) 2013 LoadedCommerce Team
   @license    http://loadedcommerce.com/license.html
-  */ 
+  */
+  // more testing for commit message connect to tp 
 ?>
 <!--CHECKOUT SHIPPING SECTION STARTS-->
   <div id="checkout_shipping_details" class="full_page">
